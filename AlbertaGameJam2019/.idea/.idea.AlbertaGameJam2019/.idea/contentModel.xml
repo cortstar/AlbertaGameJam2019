@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\cortland\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\cortland\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_AlbertaGameJam2019.-1020159295.00" t="ExcludeRecursive" />
+    <e p="C:\Users\cortland\Documents\AlbertaGameJam2019\AlbertaGameJam2019" t="IncludeRecursive">
+      <e p="AlbertaGameJam2019.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="src" t="Include">
+          <e p="Helper" t="Include">
+            <e p="Range.cs" t="Include" />
+            <e p="RangeExtensions.cs" t="Include" />
+            <e p="Safety.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
+            <e p="VectorHelper.cs" t="Include" />
+          </e>
+          <e p="Missive" t="Include">
+            <e p="Events" t="Include">
+              <e p="GunInputEvent.cs" t="Include" />
+              <e p="LookEvent.cs" t="Include" />
+              <e p="MovementEvent.cs" t="Include" />
+              <e p="SkillDashEvent.cs" t="Include" />
+              <e p="SkillOneEvent.cs" t="Include" />
+              <e p="SkillThreeEvent.cs" t="Include" />
+              <e p="SkillTwoEvent.cs" t="Include" />
+              <e p="SwordInputEvent.cs" t="Include" />
+            </e>
+            <e p="IMissiveListener.cs" t="Include" />
+            <e p="Missive.cs" t="Include" />
+            <e p="MissiveAggregator.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
