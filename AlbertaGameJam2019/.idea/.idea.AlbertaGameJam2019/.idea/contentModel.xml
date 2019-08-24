@@ -9,7 +9,6 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="LoadNewArea.cs" t="Include" />
-          <e p="PlayerStartPoint.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
         </e>
         <e p="src" t="Include">
@@ -47,6 +46,7 @@
             <e p="PistolSkill.cs" t="Include" />
             <e p="PlayerSkill.cs" t="Include" />
             <e p="SkillObjectControllers" t="Include">
+              <e p="PistolObjectController.cs" t="Include" />
               <e p="SwordObjectController.cs" t="Include" />
             </e>
             <e p="SwordSkill.cs" t="Include" />
