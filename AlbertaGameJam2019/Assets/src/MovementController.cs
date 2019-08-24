@@ -19,6 +19,13 @@ public class MovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Rotate Character
+        var PlayerDirection = Vector3.right * Input.GetAxis("RHorizontal") + Vector3.forward * -Input.GetAxis("RVertical");
+        if (PlayerDirection.sqrMagnitude > 0.0f)
+        {
+            transform.LookAt(transform.position + PlayerDirection);
+        }
+        
         //Move Character
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
         moveDirection *= speed;
