@@ -1,29 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MovementController : MonoBehaviour
 {
-    CharacterController characterController;
     public float speed = 6.0f;
     public static MovementController instance;
     private Vector3 moveDirection = Vector3.zero;
+    private NavMeshAgent agent;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            if (instance != this)
-            {
-                Destroy(gameObject);
-            }
-        }
-        characterController = GetComponent<CharacterController>();
+        agent = gameObject.GetComponentSafely<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -32,6 +22,6 @@ public class MovementController : MonoBehaviour
         //Move Character
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
         moveDirection *= speed;
-        characterController.Move(moveDirection * Time.deltaTime);                   
+        agent.Move(moveDirection*Time.deltaTime);
     }
 }

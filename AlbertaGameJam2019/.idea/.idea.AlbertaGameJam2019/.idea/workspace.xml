@@ -47,6 +47,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Marcotte.unity" />
         <option value="$PROJECT_DIR$/Assets/src/Skill/PistolSkill.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/MovementController.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566616325385</updated>
-      <workItem from="1566616332452" duration="11615000" />
+      <workItem from="1566616332452" duration="12225000" />
     </task>
     <servers />
   </component>
