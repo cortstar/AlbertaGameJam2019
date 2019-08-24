@@ -15,22 +15,21 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("A"))
-        {
-           Debug.Log("A was pressed");
-        }
+            MissiveAggregator.instance.Publish(new SkillDashEvent()); 
+        
         if (Input.GetButtonDown("B"))
-            Debug.Log("B was pressed");
+            MissiveAggregator.instance.Publish(new SkillOneEvent());
 
         if (Input.GetButtonDown("X"))
-            Debug.Log("X was pressed");
+            MissiveAggregator.instance.Publish(new SkillTwoEvent());
 
         if (Input.GetButtonDown("Y"))
-            Debug.Log("Y was pressed");
+            MissiveAggregator.instance.Publish(new SkillThreeEvent());
 
         if (Input.GetAxis("RightTrigger") > 0)
             MissiveAggregator.instance.Publish(new SwordInputEvent());
 
         if (Input.GetAxis("LeftTrigger") > 0)
-            Debug.Log("LeftTrigger");
+            MissiveAggregator.instance.Publish(new GunInputEvent());
     }
 }
