@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class WorldUIManager : MonoBehaviour
 {
     public Slider healthBar;
-    public Text healthText;
-    public static UIManager instance;
+    public static WorldUIManager instance;
     public int maxHealth;
     public int currentHealth;
 
@@ -32,6 +31,5 @@ public class UIManager : MonoBehaviour
     {
         healthBar.maxValue = maxHealth;
         healthBar.value = currentHealth;
-        healthText.text = "HP: " + currentHealth + "/" + maxHealth;
     }
 }
