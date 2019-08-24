@@ -92,5 +92,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeActive: 0.2
-  SwordDamage: 0
+  SwordDamage: 5
   force: 20

@@ -8,7 +8,6 @@ public class PistolSkill : PlayerSkill
     private GameObject pistolObject;
     Timer _timer = new Timer(2f);
     
-
     public override Timer Cooldown
     {
         get => _timer;
@@ -17,7 +16,6 @@ public class PistolSkill : PlayerSkill
 
     protected override void Behave(GameObject User)
     {
-        Debug.Log("test");
         Instantiate(pistolObject, transform.position + gameObject.transform.forward, transform.rotation, transform);
     }
 }
