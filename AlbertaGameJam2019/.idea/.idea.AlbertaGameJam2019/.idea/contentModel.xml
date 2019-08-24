@@ -37,6 +37,7 @@
             <e p="PlayerController.cs" t="Include" />
           </e>
           <e p="Skill" t="Include">
+            <e p="PistolSkill.cs" t="Include" />
             <e p="PlayerSkill.cs" t="Include" />
             <e p="SkillObjectControllers" t="Include">
               <e p="SwordObjectController.cs" t="Include" />
