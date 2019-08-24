@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MarJam.unity
+    guid: 1b10df53eb4f68741bce67e64c7a2e0f
+  - enabled: 1
+    path: Assets/Scenes/Cortstar.unity
+    guid: d2b349c5e9bec2646ac06e1534ccb447
   m_configObjects: {}
