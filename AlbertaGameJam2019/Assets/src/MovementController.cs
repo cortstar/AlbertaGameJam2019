@@ -22,7 +22,7 @@ public class MovementController : MonoBehaviour
         
         //Rotate Character
         var PlayerDirection = Vector3.right * Input.GetAxis("RHorizontal") + Vector3.forward * -Input.GetAxis("RVertical");
-        Debug.Log(PlayerDirection);
+
         if (PlayerDirection.sqrMagnitude > 0.0f)
         {
             transform.LookAt(transform.position + PlayerDirection);

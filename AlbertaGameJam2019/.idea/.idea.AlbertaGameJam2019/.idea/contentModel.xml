@@ -14,6 +14,10 @@
         <e p="src" t="Include">
           <e p="AudioManager.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
+          <e p="Enemy" t="Include">
+            <e p="ChargeForwardEnemy.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+          </e>
           <e p="HealthManager.cs" t="Include" />
           <e p="Helper" t="Include">
             <e p="Range.cs" t="Include" />
@@ -43,6 +47,7 @@
             <e p="PlayerController.cs" t="Include" />
           </e>
           <e p="Skill" t="Include">
+            <e p="KnockbackController.cs" t="Include" />
             <e p="PistolSkill.cs" t="Include" />
             <e p="PlayerSkill.cs" t="Include" />
             <e p="SkillObjectControllers" t="Include">

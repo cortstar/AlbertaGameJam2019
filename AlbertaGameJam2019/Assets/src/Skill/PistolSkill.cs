@@ -7,6 +7,7 @@ public class PistolSkill : PlayerSkill
     [SerializeField]
     private GameObject pistolObject;
     Timer _timer = new Timer(2f);
+    
 
     public override Timer Cooldown
     {
