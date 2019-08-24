@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LoadNewArea : MonoBehaviour
 {
-    public string exitPoint;
     public string levelToLoad;
 
     private PlayerController player;
@@ -17,6 +16,7 @@ public class LoadNewArea : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("entered");
         if (other.gameObject.name == "Player")
         {
             SceneManager.LoadScene(levelToLoad);
