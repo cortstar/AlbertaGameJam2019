@@ -5,19 +5,23 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public class PlayerController : MonoBehaviour, IMissiveListener<SwordInputEvent>
+public class PlayerController : MonoBehaviour, IMissiveListener<SwordInputEvent>, IMissiveListener<GunInputEvent>
 {
-    public Transform target;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        agent.destination = target.position;
+        MissiveAggregator.instance.Register<SwordInputEvent>(this);
+        MissiveAggregator.instance.Register<GunInputEvent>(this);
     }
 
     public void HandleMissive(SwordInputEvent missive)
     {
+        Debug.Log("heard");
         gameObject.GetComponentSafely<SwordSkill>().Use(gameObject);
+    }
+
+    public void HandleMissive(GunInputEvent missive)
+    {
+        gameObject.GetComponentSafely<PistolSkill>().Use(gameObject);
     }
 }

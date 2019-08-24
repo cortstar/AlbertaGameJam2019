@@ -17,7 +17,6 @@ public class SwordObjectController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timeToLive);
         timeToLive.Update();
     }
 }

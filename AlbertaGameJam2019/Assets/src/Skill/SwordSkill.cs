@@ -19,7 +19,7 @@ public class SwordSkill : PlayerSkill
 
     protected override void Behave(GameObject user)
     {
-        Instantiate(swordObject, transform.position +  distance * gameObject.transform.up, transform.rotation);
+        Instantiate(swordObject, transform.position +  distance * gameObject.transform.forward, transform.rotation, transform);
     }
     
 }

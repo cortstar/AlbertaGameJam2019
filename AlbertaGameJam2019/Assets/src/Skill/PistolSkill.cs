@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class PistolSkill : PlayerSkill
 {
-    public override Timer Cooldown { get; set; }
+    [SerializeField]
+    private GameObject pistolObject;
+    Timer _timer = new Timer(2f);
+
+    public override Timer Cooldown
+    {
+        get => _timer;
+        set => _timer = value;
+    }
+
     protected override void Behave(GameObject User)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("test");
+        Instantiate(pistolObject, transform.position + gameObject.transform.forward, transform.rotation, transform);
     }
 }

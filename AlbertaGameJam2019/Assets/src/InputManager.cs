@@ -14,22 +14,24 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("A"))
+        if (Input.GetKeyDown(KeyCode.JoystickButton0))
             MissiveAggregator.instance.Publish(new SkillDashEvent()); 
         
-        if (Input.GetButtonDown("B"))
+        if (Input.GetKeyDown(KeyCode.JoystickButton1))
             MissiveAggregator.instance.Publish(new SkillOneEvent());
 
-        if (Input.GetButtonDown("X"))
+        if (Input.GetKeyDown(KeyCode.JoystickButton2))
             MissiveAggregator.instance.Publish(new SkillTwoEvent());
 
-        if (Input.GetButtonDown("Y"))
+        if (Input.GetKeyDown(KeyCode.JoystickButton3))
             MissiveAggregator.instance.Publish(new SkillThreeEvent());
 
-        if (Input.GetAxis("RightTrigger") > 0)
+        if (Input.GetKeyDown(KeyCode.JoystickButton5))
+        {
             MissiveAggregator.instance.Publish(new SwordInputEvent());
-
-        if (Input.GetAxis("LeftTrigger") > 0)
+        }
+        
+        if (Input.GetKeyDown(KeyCode.JoystickButton4))
             MissiveAggregator.instance.Publish(new GunInputEvent());
     }
 }
