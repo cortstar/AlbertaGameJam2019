@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 621037471}
   - component: {fileID: 621037470}
   - component: {fileID: 621037474}
+  - component: {fileID: 621037475}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -310,3 +311,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swordObject: {fileID: 4935866567824994001, guid: 37555e79c959e2f46a6e1341692c20bb,
     type: 3}
+  distance: 0
+--- !u!114 &621037475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621037469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f476e1973fff5f44b73c0b0335321b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
