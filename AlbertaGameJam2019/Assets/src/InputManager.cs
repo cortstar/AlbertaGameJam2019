@@ -14,7 +14,9 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown("A"))
-            Debug.Log("A was pressed");
+        {
+           
+        }
 
         if (Input.GetButtonDown("B"))
             Debug.Log("B was pressed");
