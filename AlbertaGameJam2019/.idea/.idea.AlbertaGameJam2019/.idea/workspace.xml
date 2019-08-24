@@ -14,7 +14,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/SkillDashEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/SwordInputEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Skill/SwordSkill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/MovementEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Skill/PlayerSkill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/SkillOneEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/SkillThreeEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/SkillTwoEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,13 +28,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/GunInputEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SwordInputEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/MovementEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/LookEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SkillTwoEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SkillThreeEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SkillOneEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SkillDashEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SwordInputEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Skill/SwordSkill.cs" />
+        <option value="$PROJECT_DIR$/Assets/Skill/PlayerSkill.cs" />
       </list>
     </option>
   </component>
@@ -82,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566616325385</updated>
-      <workItem from="1566616332452" duration="2727000" />
+      <workItem from="1566616332452" duration="3967000" />
     </task>
     <servers />
   </component>
@@ -104,6 +108,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="507" y="163" key="RiderGenerateDialog" />
+    <state x="507" y="163" key="RiderGenerateDialog/2160.1440" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
