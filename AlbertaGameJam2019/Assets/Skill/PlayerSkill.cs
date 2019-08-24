@@ -27,6 +27,12 @@ public abstract class PlayerSkill : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("updating");
         Cooldown.Update();
+        OnUpdate();
+    }
+
+    protected virtual void OnUpdate()
+    {
     }
 }

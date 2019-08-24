@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Missive_CSharp;
-using UnityEngine;
+﻿using Missive_CSharp;
 
 public class SwordInputEvent : Missive
 {
