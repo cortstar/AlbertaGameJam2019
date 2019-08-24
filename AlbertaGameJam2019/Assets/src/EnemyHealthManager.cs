@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealthManager : MonoBehaviour
 {
     public int totalHealth;
     public int currentHealth;
+    public Slider healthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +18,8 @@ public class EnemyHealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        WorldUIManager.instance.maxHealth = totalHealth;
-        WorldUIManager.instance.currentHealth = currentHealth;
+        healthBar.maxValue = totalHealth;
+        healthBar.value = currentHealth;
     }
 
     public void takeDamage(int damage)
