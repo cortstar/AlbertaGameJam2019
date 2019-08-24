@@ -88,6 +88,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 5440361161680861701}
   - component: {fileID: 5440361161680861703}
   - component: {fileID: 5440361161680861700}
@@ -95,6 +96,16 @@ GameObject:
   - component: {fileID: 5440361161680861699}
   - component: {fileID: 5440361161680861698}
   - component: {fileID: 5440361161680861697}
+=======
+  - component: {fileID: 8996801967344792614}
+  - component: {fileID: 8996801967344792612}
+  - component: {fileID: 8996801967344792615}
+  - component: {fileID: 8996801967344792613}
+  - component: {fileID: 8996801967344792608}
+  - component: {fileID: 8996801967344792609}
+  - component: {fileID: 8996801967344792610}
+  - component: {fileID: 7680367432102362133}
+>>>>>>> origin/jerrad
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -205,3 +216,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pistolObject: {fileID: 2348818715629408645, guid: 7fa0d73355a28c04ba3ef5455322baf0,
     type: 3}
+--- !u!114 &7680367432102362133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8996801967344792619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e9001e3f440dc4ba3888a1e0459d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalHealth: 100
+  currentHealth: 0
+  isPlayer: 1

@@ -1,11 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthManager : MonoBehaviour
 {
     public int totalHealth;
     public int currentHealth;
+<<<<<<< HEAD
+=======
+    public string levelToLoad;
+>>>>>>> origin/jerrad
 
     // Start is called before the first frame update
     void Start()
@@ -27,5 +33,15 @@ public class PlayerHealthManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        Invoke("GoToMain", 3);
+    }
+
+    private void GoToMain()
+    {
+        SceneManager.LoadScene(levelToLoad);
     }
 }
