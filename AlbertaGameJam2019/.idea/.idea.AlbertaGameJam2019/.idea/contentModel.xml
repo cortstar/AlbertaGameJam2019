@@ -20,7 +20,7 @@
             <e p="ChargeForwardEnemy.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
           </e>
-          <e p="HealthManager.cs" t="Include" />
+          <e p="EnemyHealthManager.cs" t="Include" />
           <e p="Helper" t="Include">
             <e p="Range.cs" t="Include" />
             <e p="RangeExtensions.cs" t="Include" />
@@ -46,6 +46,7 @@
             <e p="PlayerController.cs" t="Include" />
           </e>
           <e p="MovementController.cs" t="Include" />
+          <e p="PlayerHealthManager.cs" t="Include" />
           <e p="Skill" t="Include">
             <e p="KnockbackController.cs" t="Include" />
             <e p="PistolSkill.cs" t="Include" />

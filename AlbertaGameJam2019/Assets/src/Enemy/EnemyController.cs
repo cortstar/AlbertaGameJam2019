@@ -6,13 +6,13 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     protected NavMeshAgent agent;
-    protected HealthManager health;
+    protected EnemyHealthManager health;
     public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         agent = gameObject.GetComponentSafely<NavMeshAgent>();
-        health = gameObject.GetComponentSafely<HealthManager>();
+        health = gameObject.GetComponentSafely<EnemyHealthManager>();
     }
     
 }

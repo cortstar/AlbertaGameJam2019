@@ -28,10 +28,10 @@ public class SwordObjectController : MonoBehaviour
             {
                 kb.Knockback(transform.forward*force, 0.1f);
             }
-            var health = col.GetComponent<HealthManager>();
+            var health = col.GetComponent<EnemyHealthManager>();
             if (health != null)
             {
-                health.takeDamage(SwordDamage);
+               health.takeDamage(SwordDamage);
             }
         }
     }
