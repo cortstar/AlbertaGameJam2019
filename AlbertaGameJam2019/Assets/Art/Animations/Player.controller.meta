@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 57925901a9d3eeb4999b351b2a5826f5
+=======
+guid: 9725ddbbcf270ee41a685fbcf5a4ba3a
+>>>>>>> origin/Marcotte
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
