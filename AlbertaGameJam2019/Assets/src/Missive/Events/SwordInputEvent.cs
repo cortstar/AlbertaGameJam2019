@@ -7,7 +7,6 @@ public class SwordInputEvent : Missive
 {
     public override string ToString()
     {
-        throw new System.NotImplementedException();
-        MissiveAggregator.instance.Publish(new SwordInputEvent());
+        return "Sword button input";
     }
 }

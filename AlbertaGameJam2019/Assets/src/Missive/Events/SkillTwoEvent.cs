@@ -7,6 +7,6 @@ public class SkillTwoEvent : Missive
 {
     public override string ToString()
     {
-        throw new System.NotImplementedException();
+        return "Second skill button pressed";
     }
 }

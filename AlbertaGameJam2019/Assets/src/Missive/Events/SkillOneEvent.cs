@@ -7,6 +7,6 @@ public class SkillOneEvent : Missive
 {
     public override string ToString()
     {
-        throw new System.NotImplementedException();
+        return "First skill button pressed";
     }
 }

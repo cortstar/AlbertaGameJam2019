@@ -15,6 +15,7 @@
             <e p="Timer.cs" t="Include" />
             <e p="VectorHelper.cs" t="Include" />
           </e>
+          <e p="InputManager.cs" t="Include" />
           <e p="Missive" t="Include">
             <e p="Events" t="Include">
               <e p="GunInputEvent.cs" t="Include" />

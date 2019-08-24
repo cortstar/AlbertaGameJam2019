@@ -14,7 +14,7 @@ public class MovementEvent : Missive
 
     public override string ToString()
     {
-        throw new System.NotImplementedException();
+        return string.Format("Movement: {0},{1}", axis.x, axis.y);
     }
     
 

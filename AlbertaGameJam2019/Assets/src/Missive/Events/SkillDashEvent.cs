@@ -7,6 +7,6 @@ public class SkillDashEvent : Missive
 {
     public override string ToString()
     {
-        throw new System.NotImplementedException();
+        return "Dash button pressed";
     }
 }

@@ -14,6 +14,6 @@ public class LookEvent : Missive
 
     public override string ToString()
     {
-        throw new System.NotImplementedException();
+        return string.Format("Look vector: {0},{1}", axis.x, axis.y);
     }
 }
