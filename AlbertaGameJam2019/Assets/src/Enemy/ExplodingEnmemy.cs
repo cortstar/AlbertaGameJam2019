@@ -27,6 +27,7 @@ public class ExplodingEnmemy : EnemyController
         float xDist = Mathf.Abs(playerPos[0] - selfPos[0]);
         float yDist = Mathf.Abs(playerPos[2] - selfPos[2]);
         float hypoteneuse = Mathf.Sqrt(xDist * xDist) + (yDist * yDist);
+        Debug.Log(hypoteneuse);
         return hypoteneuse < distance;
     }
 
@@ -39,6 +40,7 @@ public class ExplodingEnmemy : EnemyController
         float hypoteneuse = Mathf.Sqrt(xDist * xDist) + (yDist * yDist);
         if (hypoteneuse < explosionRadius)
         {
+            Debug.Log("boom");
             player.GetComponent<PlayerHealthManager>().takeDamage(20);
         }
     }
