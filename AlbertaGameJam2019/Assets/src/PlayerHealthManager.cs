@@ -8,10 +8,7 @@ public class PlayerHealthManager : MonoBehaviour
 {
     public int totalHealth;
     public int currentHealth;
-<<<<<<< HEAD
-=======
     public string levelToLoad;
->>>>>>> origin/jerrad
 
     // Start is called before the first frame update
     void Start()
