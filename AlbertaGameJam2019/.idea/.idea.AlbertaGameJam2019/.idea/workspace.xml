@@ -12,7 +12,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/src/Skill/PistolSkill.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/src/Skill/PistolSkill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Skill/SwordSkill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Helper/Safety.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/MovementEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,6 +46,7 @@
         <option value="$PROJECT_DIR$/Assets/src/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Marcotte.unity" />
+        <option value="$PROJECT_DIR$/Assets/src/Skill/PistolSkill.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566616325385</updated>
-      <workItem from="1566616332452" duration="10240000" />
+      <workItem from="1566616332452" duration="11615000" />
     </task>
     <servers />
   </component>
