@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - Load Level
-=======
-  - Enemy
->>>>>>> origin/Marcotte
+  tags: []
   layers:
   - Default
   - TransparentFX
