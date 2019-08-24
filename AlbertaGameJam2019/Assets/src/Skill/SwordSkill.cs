@@ -8,6 +8,8 @@ public class SwordSkill : PlayerSkill
     [FormerlySerializedAs("SwordObject")] [SerializeField]
     private GameObject swordObject;
 
+    [SerializeField] private float distance;
+
     private Timer _cooldown = new Timer(.2f);
     public override Timer Cooldown
     {
@@ -17,15 +19,7 @@ public class SwordSkill : PlayerSkill
 
     protected override void Behave(GameObject user)
     {
-        Instantiate(swordObject, transform.position + 1f * gameObject.transform.up, transform.rotation);
+        Instantiate(swordObject, transform.position +  distance * gameObject.transform.up, transform.rotation);
     }
-
-    protected override void OnUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Debug.Log("j");
-            Use(gameObject);
-        }
-    }
+    
 }

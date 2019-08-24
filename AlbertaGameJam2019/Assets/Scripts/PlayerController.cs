@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Missive_CSharp;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IMissiveListener<SwordInputEvent>
 {
     CharacterController characterController;
     public float speed = 6.0f;
@@ -39,5 +41,10 @@ public class PlayerController : MonoBehaviour
         {
             transform.LookAt(transform.position + PlayerDirection);
         }
+    }
+
+    public void HandleMissive(SwordInputEvent missive)
+    {
+        gameObject.GetComponentSafely<SwordSkill>().Use(gameObject);
     }
 }
