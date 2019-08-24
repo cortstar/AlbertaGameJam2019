@@ -16,7 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/MovementEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Skill/PlayerSkill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/SkillOneEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Skill/SkillObjectControllers/SwordObjectController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Skill/SkillObjectControllers/SwordObjectController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/SkillThreeEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/SkillTwoEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/src/Missive/Events/GunInputEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -35,10 +35,11 @@
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SkillThreeEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SkillOneEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SkillDashEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SwordInputEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Rotate.cs" />
         <option value="$PROJECT_DIR$/Assets/Skill/PlayerSkill.cs" />
         <option value="$PROJECT_DIR$/Assets/Skill/SwordSkill.cs" />
+        <option value="$PROJECT_DIR$/Assets/Skill/SkillObjectControllers/SwordObjectController.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SwordInputEvent.cs" />
       </list>
     </option>
   </component>
@@ -88,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566616325385</updated>
-      <workItem from="1566616332452" duration="7001000" />
+      <workItem from="1566616332452" duration="7356000" />
     </task>
     <servers />
   </component>

@@ -12,11 +12,12 @@ public class SwordObjectController : MonoBehaviour
     void Start()
     {
         timeToLive = new Timer(timeActive);
-        timeToLive.RegisterTimerCallback( () => Destroy(this) );
+        timeToLive.RegisterTimerCallback( () => Destroy(gameObject) );
     }
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(timeToLive);
         timeToLive.Update();
     }
 }
