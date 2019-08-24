@@ -2,20 +2,12 @@
 using System.Collections.Generic;
 using Missive_CSharp;
 using UnityEngine;
-<<<<<<< HEAD
-using UnityEngine.UIElements;
-=======
 using UnityEngine.AI;
->>>>>>> origin/Marcotte
+
 
 public class PlayerController : MonoBehaviour, IMissiveListener<SwordInputEvent>
 {
     public Transform target;
-
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
