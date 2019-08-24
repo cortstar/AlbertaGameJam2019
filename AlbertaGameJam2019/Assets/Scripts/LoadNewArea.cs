@@ -21,7 +21,6 @@ public class LoadNewArea : MonoBehaviour
         {
             SceneManager.LoadScene(levelToLoad);
             //GameManager.instance.currentLevel = levelToLoad;
-            player.startPoint = exitPoint;
         }
     }
 }
