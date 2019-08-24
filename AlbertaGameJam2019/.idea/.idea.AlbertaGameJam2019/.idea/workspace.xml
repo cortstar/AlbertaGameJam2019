@@ -36,10 +36,10 @@
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SkillOneEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SkillDashEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Rotate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Skill/PlayerSkill.cs" />
         <option value="$PROJECT_DIR$/Assets/Skill/SwordSkill.cs" />
-        <option value="$PROJECT_DIR$/Assets/Skill/SkillObjectControllers/SwordObjectController.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Missive/Events/SwordInputEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Skill/PlayerSkill.cs" />
+        <option value="$PROJECT_DIR$/Assets/Skill/SkillObjectControllers/SwordObjectController.cs" />
       </list>
     </option>
   </component>
@@ -89,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566616325385</updated>
-      <workItem from="1566616332452" duration="7356000" />
+      <workItem from="1566616332452" duration="7643000" />
     </task>
     <servers />
   </component>
