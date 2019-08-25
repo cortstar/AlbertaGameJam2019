@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1230185343}
   - component: {fileID: 1230185345}
   - component: {fileID: 1230185344}
+  - component: {fileID: 1230185346}
   m_Layer: 0
   m_Name: spritesheetSlime_0
   m_TagString: Untagged
@@ -101,6 +102,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1230185346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230185342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bdb54de981522849b6dde1385c8c11d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5493669186957505019
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +175,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 7
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

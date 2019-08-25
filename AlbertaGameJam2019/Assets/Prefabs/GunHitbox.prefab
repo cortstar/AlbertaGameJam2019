@@ -137,4 +137,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PistolDamage: 4
-  knockbackForce: 30
+  knockbackForce: 35
