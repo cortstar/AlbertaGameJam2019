@@ -993,6 +993,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4818251865163131322, guid: 7818851edbe2e5541b6bb97d13dc192b,
+        type: 3}
+      propertyPath: redFlash
+      value: 
+      objectReference: {fileID: 1188660357}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7818851edbe2e5541b6bb97d13dc192b, type: 3}
 --- !u!1 &798594480
@@ -2085,6 +2090,12 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!225 &1188660357 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 9158333069390130840, guid: e8866935e8ac37d4dbcbe8c6731f7ee4,
+    type: 3}
+  m_PrefabInstance: {fileID: 806674078}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1192612925
 GameObject:
   m_ObjectHideFlags: 0
