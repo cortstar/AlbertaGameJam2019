@@ -27,7 +27,7 @@ public class PlayerHealthManager : MonoBehaviour
         currentHealth += -damage;
         if (currentHealth <= 0)
         {
-            Invoke("GoToMain", 1);
+            Invoke("GoToMain", 1f);
         }
     }
 

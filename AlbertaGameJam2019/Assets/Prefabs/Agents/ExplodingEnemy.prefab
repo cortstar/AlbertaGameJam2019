@@ -248,6 +248,8 @@ MonoBehaviour:
   selfPos: {x: 0, y: 0, z: 0}
   distance: 4
   explosionRadius: 8
+  explosionEffect: {fileID: 6679705274949687405, guid: 2848e2c3d141f5a4e989d9c34618181c,
+    type: 3}
   ExplosionTelegraphTime: 1
   exploding: 0
 --- !u!1001 &1129073092749520827

@@ -10,6 +10,7 @@ public class ExplodingEnmemy : EnemyController
     public Vector3 selfPos;
     public float distance;
     public float explosionRadius;
+    public GameObject explosionEffect;
 
     [SerializeField]
     private float ExplosionTelegraphTime;
@@ -63,6 +64,7 @@ public class ExplodingEnmemy : EnemyController
     {
         if (player != null)
         {
+            GameObject.Instantiate(explosionEffect, transform.position, transform.rotation);
             playerPos = player.transform.position;
             selfPos = transform.position;
             float xDist = Mathf.Abs(playerPos[0] - selfPos[0]);
@@ -70,7 +72,7 @@ public class ExplodingEnmemy : EnemyController
             float hypoteneuse = Mathf.Sqrt(xDist * xDist) + (yDist * yDist);
             if (hypoteneuse < explosionRadius)
             {
-                player.GetComponent<PlayerHealthManager>().takeDamage(20);
+                player.GetComponent<PlayerHealthManager>().takeDamage(14);
             }
             MissiveAggregator.instance.Publish(new EnemyExplodedEvent(transform.position));
         }

@@ -154,9 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e9001e3f440dc4ba3888a1e0459d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 20
-  currentHealth: 20
-  levelToLoad: 
+  totalHealth: 30
+  currentHealth: 30
 --- !u!54 &644057916
 Rigidbody:
   m_ObjectHideFlags: 0

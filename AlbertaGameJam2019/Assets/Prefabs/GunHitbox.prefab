@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7abb82800529b4bb7a2731c9fd2733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PistolDamage: 4
+  PistolDamage: 12
   knockbackForce: 35
 --- !u!1001 &2313542454443044824
 PrefabInstance:
