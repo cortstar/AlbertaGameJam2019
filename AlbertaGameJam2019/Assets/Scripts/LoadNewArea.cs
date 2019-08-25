@@ -6,13 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadNewArea : MonoBehaviour
 {
     public string levelToLoad;
-
-    private PlayerController player;
-
-    void Start()
-    {
-        player = FindObjectOfType<PlayerController>();
-    }
+    
 
     void OnTriggerEnter(Collider other)
     {
@@ -20,7 +14,6 @@ public class LoadNewArea : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             SceneManager.LoadScene(levelToLoad);
-            //GameManager.instance.currentLevel = levelToLoad;
         }
     }
 }

@@ -20,6 +20,6 @@ public class EnemyController : MonoBehaviour
 
     private void OnDestroy()
     {
-        MissiveAggregator.instance.Publish(new EnemyDiedEvent(this.transform.position));
+        MissiveAggregator.instance.Publish(new EnemyDiedEvent(transform.position));
     }
 }
