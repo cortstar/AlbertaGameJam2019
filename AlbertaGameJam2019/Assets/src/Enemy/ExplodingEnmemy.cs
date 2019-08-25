@@ -25,6 +25,7 @@ public class ExplodingEnmemy : EnemyController
     // Update is called once per frame
     void Update()
     {
+        
         if (exploding)
         {
             agent.velocity = Vector3.zero;

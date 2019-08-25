@@ -11,6 +11,9 @@ public class EnemyController : MonoBehaviour
     protected EnemyHealthManager health;
     public GameObject player;
     // Start is called before the first frame update
+    
+    [SerializeField] 
+    private float aggroRadius;
     void Start()
     {
         player = GameObject.FindWithTag("Player");
