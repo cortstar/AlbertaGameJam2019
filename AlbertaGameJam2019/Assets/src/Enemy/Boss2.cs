@@ -1,8 +1,11 @@
 ﻿using Missive_CSharp;
+using UnityEngine.AI;
 using UnityEngine;
 
-public class ChargeForwardEnemy : EnemyController
+public class Boss2 : EnemyController
 {
+    private NavMeshAgent agent;
+    public static Boss2 instance;
     private Timer damageCooldown;
 
     [SerializeField]
@@ -14,21 +17,36 @@ public class ChargeForwardEnemy : EnemyController
     {
         damageCooldown = new Timer(damageCooldownTime);
     }
+
+    void Start()
+    {
+        agent = gameObject.GetComponentSafely<NavMeshAgent>();
+        gameObject.SetActive(false);
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            if (instance != this)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if ((player.transform.position - transform.position).magnitude < aggroRadius)
-        {
-            agent.SetDestination(player.transform.position);
-        }
+        agent.SetDestination(player.transform.position);
         damageCooldown.Update();
     }
 
     private void OnCollisionStay(Collision other)
     {
         var playerHealth = other.gameObject.GetComponent<PlayerHealthManager>();
-        
-        if (damageCooldown.IsComplete && playerHealth!=null)
+
+        if (damageCooldown.IsComplete && playerHealth != null)
         {
             playerHealth.takeDamage(damage);
             damageCooldown.Reset();
