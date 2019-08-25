@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PistolObjectController : MonoBehaviour
 {
-    Timer timeToLive = new Timer(0.1f);
+    Timer timeToLive = new Timer(0.8f);
     [SerializeField]
     private int PistolDamage;
     [SerializeField]

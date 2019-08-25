@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     
     [SerializeField] 
-    private float aggroRadius;
+    protected float aggroRadius;
     void Start()
     {
         player = GameObject.FindWithTag("Player");

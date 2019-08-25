@@ -18,6 +18,6 @@ public class PistolSkill : PlayerSkill
     protected override void Behave(GameObject User)
     {
         MissiveAggregator.instance.Publish(new GunUsedEvent(transform.position));
-        Instantiate(pistolObject, transform.position + gameObject.transform.forward, transform.rotation, transform);
+        Instantiate(pistolObject, transform.position + gameObject.transform.forward*1.4f, transform.rotation, transform);
     }
 }

@@ -33,7 +33,6 @@ public class AudioManager : MonoBehaviour,
     
     void swordSound(Vector3 coords)
     {
-        Debug.Log("play");
         Sword.transform.position = coords;
         Sword.Play();
     }

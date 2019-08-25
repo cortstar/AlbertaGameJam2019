@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5947538620465565742}
+  aggroRadius: 10
   playerPos: {x: 0, y: 0, z: 0}
   selfPos: {x: 0, y: 0, z: 0}
   distance: 4

@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361135152170403549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.5}
+  m_LocalPosition: {x: -0.85, y: 0, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 7}
   m_Children: []
   m_Father: {fileID: 6952508782665478523}
@@ -48,7 +48,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361135152170403549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -154,17 +154,17 @@ PrefabInstance:
     - target: {fileID: 6679705274949687404, guid: e243e18a8de473c498f05fead8600884,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.258839
+      value: -0.85
       objectReference: {fileID: 0}
     - target: {fileID: 6679705274949687404, guid: e243e18a8de473c498f05fead8600884,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6679705274949687404, guid: e243e18a8de473c498f05fead8600884,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.4642286
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6679705274949687404, guid: e243e18a8de473c498f05fead8600884,
         type: 3}
@@ -204,6 +204,41 @@ PrefabInstance:
     - target: {fileID: 6679705274949687404, guid: e243e18a8de473c498f05fead8600884,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433384555003608283, guid: e243e18a8de473c498f05fead8600884,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433384555003608283, guid: e243e18a8de473c498f05fead8600884,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433384555003608283, guid: e243e18a8de473c498f05fead8600884,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433384555003608283, guid: e243e18a8de473c498f05fead8600884,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679705275169688642, guid: e243e18a8de473c498f05fead8600884,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679705275169688642, guid: e243e18a8de473c498f05fead8600884,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679705275169688642, guid: e243e18a8de473c498f05fead8600884,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

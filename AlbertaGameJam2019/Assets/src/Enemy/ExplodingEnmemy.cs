@@ -25,24 +25,26 @@ public class ExplodingEnmemy : EnemyController
     // Update is called once per frame
     void Update()
     {
-        
-        if (exploding)
+        if ((player.transform.position - transform.position).magnitude < aggroRadius)
         {
-            agent.velocity = Vector3.zero;
-            ExplosionTelegraphTimer.Update();
+            if (exploding)
+            {
+                agent.velocity = Vector3.zero;
+                ExplosionTelegraphTimer.Update();
             
-            if (ExplosionTelegraphTimer.IsComplete)
-            {
-                Destroy(gameObject);
+                if (ExplosionTelegraphTimer.IsComplete)
+                {
+                    Destroy(gameObject);
+                }
             }
-        }
-        else
-        {
-            agent.SetDestination(player.transform.position);
-            if (closeToPlayer())
+            else
             {
-                exploding = true;
-                agent.speed = 0;
+                agent.SetDestination(player.transform.position);
+                if (closeToPlayer())
+                {
+                    exploding = true;
+                    agent.speed = 0;
+                }
             }
         }
     }

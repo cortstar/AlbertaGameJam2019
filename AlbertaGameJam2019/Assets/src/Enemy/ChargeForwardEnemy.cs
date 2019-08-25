@@ -20,7 +20,10 @@ public class ChargeForwardEnemy : EnemyController
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(player.transform.position);
+        if ((player.transform.position - transform.position).magnitude < aggroRadius)
+        {
+            agent.SetDestination(player.transform.position);
+        }
         damageCooldown.Update();
     }
 
