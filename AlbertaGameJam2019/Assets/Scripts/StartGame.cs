@@ -7,7 +7,7 @@ public class StartGame : MonoBehaviour
 {
     public void GotoMainScene()
     {
-        SceneManager.LoadScene("MarJam");
+        SceneManager.LoadScene("Level1");
     }
 
     public void Quit()
