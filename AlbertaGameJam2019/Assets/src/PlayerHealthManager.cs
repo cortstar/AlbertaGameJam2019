@@ -8,7 +8,6 @@ public class PlayerHealthManager : MonoBehaviour
 {
     public int totalHealth;
     public int currentHealth;
-    public string levelToLoad;
 
     // Start is called before the first frame update
     void Start()
@@ -28,17 +27,17 @@ public class PlayerHealthManager : MonoBehaviour
         currentHealth += -damage;
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Invoke("GoToMain", 1);
         }
     }
 
     private void OnDestroy()
     {
-        Invoke("GoToMain", 3);
+        SceneManager.LoadScene("StartMenu");
     }
 
     private void GoToMain()
     {
-        SceneManager.LoadScene(levelToLoad);
+        Destroy(gameObject);
     }
 }

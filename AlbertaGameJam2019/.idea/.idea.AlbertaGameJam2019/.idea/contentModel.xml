@@ -20,6 +20,7 @@
           <e p="AudioManager.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
           <e p="DashSkill.cs" t="Include" />
+          <e p="EndScript.cs" t="Include" />
           <e p="Enemy" t="Include">
             <e p="ChargeForwardEnemy.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
