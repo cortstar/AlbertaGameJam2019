@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Missive_CSharp;
 using UnityEngine;
 
 public class ChargeForwardEnemy : EnemyController
@@ -32,6 +33,7 @@ public class ChargeForwardEnemy : EnemyController
             playerHealth.takeDamage(damage);
             damageCooldown.Reset();
             damageCooldown.Unpause();
+            MissiveAggregator.instance.Publish(new EnemyAttackEvent(transform.position));
         }
     }
 }

@@ -93,7 +93,7 @@ public class AudioManager : MonoBehaviour,
 
     public void HandleMissive(EnemyAttackEvent missive)
     {
-        throw new System.NotImplementedException();
+        enemyAttackSound(missive.position);
     }
 
     public void HandleMissive(StoppedMovingEvent missive)
@@ -103,6 +103,6 @@ public class AudioManager : MonoBehaviour,
 
     public void HandleMissive(EnemyDiedEvent missive)
     {
-        EnemyDeath.Play();
+        enemyDeathSound(missive.position);
     }
 }

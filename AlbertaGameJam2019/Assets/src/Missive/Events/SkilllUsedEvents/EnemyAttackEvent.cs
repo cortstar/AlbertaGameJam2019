@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class EnemyAttackEvent : Missive
 {public Vector3 position;
- 
-     EnemyAttackEvent(Vector3 position)
+
+    public EnemyAttackEvent(Vector3 position)
      {
          this.position = position;
      }
