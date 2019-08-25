@@ -7,7 +7,7 @@ public class StartGame : MonoBehaviour
 {
     public void GotoMainScene()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Monster");
     }
 
     public void Quit()
@@ -20,4 +20,5 @@ public class StartGame : MonoBehaviour
     {
         
     }
+
 }

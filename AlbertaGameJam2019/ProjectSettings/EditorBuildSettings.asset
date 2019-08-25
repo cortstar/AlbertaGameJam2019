@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProductionScenes/End.unity
     guid: e72af5df1311b4c4286c97988929f112
+  - enabled: 1
+    path: Assets/Scenes/ProductionScenes/Monster.unity
+    guid: 7606a130d9f202f4d83358c596479a73
   m_configObjects: {}
