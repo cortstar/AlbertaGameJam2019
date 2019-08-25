@@ -72,7 +72,7 @@ public class ExplodingEnmemy : EnemyController
             float hypoteneuse = Mathf.Sqrt(xDist * xDist) + (yDist * yDist);
             if (hypoteneuse < explosionRadius)
             {
-                player.GetComponent<PlayerHealthManager>().takeDamage(14);
+                player.GetComponent<PlayerHealthManager>().takeDamage(14, this.gameObject);
             }
             MissiveAggregator.instance.Publish(new EnemyExplodedEvent(transform.position));
         }

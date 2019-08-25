@@ -30,10 +30,11 @@ public class PlayerHealthManager : MonoBehaviour
         redFlash.alpha -= 10f * Time.deltaTime;
     }
 
-    public void takeDamage(int damage)
+    public void takeDamage(int damage, GameObject caller)
     {
         redFlash.alpha = 1f;
         currentHealth += -damage;
+        Debug.Log(caller);
         if (currentHealth <= 0)
         {
             Invoke("GoToMain", 1f);
