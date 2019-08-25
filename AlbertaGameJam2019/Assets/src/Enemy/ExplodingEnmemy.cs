@@ -40,7 +40,7 @@ public class ExplodingEnmemy : EnemyController
             if (closeToPlayer())
             {
                 exploding = true;
-                agent.destination = transform.position;
+                agent.speed = 0;
             }
         }
     }
