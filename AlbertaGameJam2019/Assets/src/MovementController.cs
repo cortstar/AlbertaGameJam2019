@@ -31,6 +31,8 @@ public class MovementController : MonoBehaviour
         //Move Character
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
         moveDirection *= speed;
-        agent.Move(moveDirection*Time.deltaTime);
+        
+        //agent.Move(moveDirection*Time.deltaTime);
+        agent.velocity = moveDirection;
     }
 }
