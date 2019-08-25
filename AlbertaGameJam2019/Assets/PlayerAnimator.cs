@@ -1,21 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerAnimator : MonoBehaviour
 {
     private Animator animator;
-    
-    private 
+
+    private NavMeshAgent playerAgent;
     // Start is called before the first frame update
     void Start()
     {
         animator = gameObject.GetComponentSafely<Animator>();
+        playerAgent = gameObject.GetComponentInParent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        animator.SetBool("IsMoving", playerAgent.velocity.magnitude > 0f );
     }
 }

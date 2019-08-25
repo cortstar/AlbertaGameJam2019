@@ -9,14 +9,39 @@ public class ExplodingEnmemy : EnemyController
     public Vector3 selfPos;
     public float distance;
     public float explosionRadius;
+
+    [SerializeField]
+    private float ExplosionTelegraphTime;
+    [SerializeField]
+    private Timer ExplosionTelegraphTimer;
+
+    public bool exploding;
+    void Awake()
+    {
+        ExplosionTelegraphTimer = new Timer(ExplosionTelegraphTime);
+    }
     
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(player.transform.position);
-        if (closeToPlayer())
+        if (exploding)
         {
-            Destroy(gameObject);
+            agent.velocity = Vector3.zero;
+            ExplosionTelegraphTimer.Update();
+            
+            if (ExplosionTelegraphTimer.IsComplete)
+            {
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            agent.SetDestination(player.transform.position);
+            if (closeToPlayer())
+            {
+                exploding = true;
+                agent.destination = transform.position;
+            }
         }
     }
 
@@ -27,7 +52,6 @@ public class ExplodingEnmemy : EnemyController
         float xDist = Mathf.Abs(playerPos[0] - selfPos[0]);
         float yDist = Mathf.Abs(playerPos[2] - selfPos[2]);
         float hypoteneuse = Mathf.Sqrt(xDist * xDist) + (yDist * yDist);
-        Debug.Log(hypoteneuse);
         return hypoteneuse < distance;
     }
 
@@ -40,7 +64,6 @@ public class ExplodingEnmemy : EnemyController
         float hypoteneuse = Mathf.Sqrt(xDist * xDist) + (yDist * yDist);
         if (hypoteneuse < explosionRadius)
         {
-            Debug.Log("boom");
             player.GetComponent<PlayerHealthManager>().takeDamage(20);
         }
     }
