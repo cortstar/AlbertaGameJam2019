@@ -686,12 +686,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -883,6 +883,7 @@ GameObject:
   - component: {fileID: 1311115946}
   - component: {fileID: 1311115945}
   - component: {fileID: 1311115944}
+  - component: {fileID: 1311115947}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -923,8 +924,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cool Chat Presents
+  m_Text: '
 
+    Cool Chat Presents
 
 
 
@@ -961,6 +963,18 @@ RectTransform:
   m_AnchoredPosition: {x: -19, y: 1}
   m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1311115947
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311115943}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1507473381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,6 +1325,7 @@ MonoBehaviour:
   buttons: {fileID: 1507473381}
   Credits: {fileID: 1311115943}
   title: {fileID: 1602564866}
+  cGroup: {fileID: 1311115947}
 --- !u!4 &2077519577
 Transform:
   m_ObjectHideFlags: 0
