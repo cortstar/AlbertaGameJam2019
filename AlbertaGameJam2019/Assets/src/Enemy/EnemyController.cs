@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using Missive_CSharp;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -15,5 +17,9 @@ public class EnemyController : MonoBehaviour
         agent = gameObject.GetComponentSafely<NavMeshAgent>();
         health = gameObject.GetComponentSafely<EnemyHealthManager>();
     }
-    
+
+    private void OnDestroy()
+    {
+        MissiveAggregator.instance.Publish(new EnemyDiedEvent(this.transform.position));
+    }
 }
