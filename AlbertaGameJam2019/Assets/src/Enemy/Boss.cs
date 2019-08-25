@@ -72,7 +72,7 @@ public class Boss : MonoBehaviour
 
         if (damageCooldown.IsComplete && playerHealth != null)
         {
-            playerHealth.takeDamage(damage);
+            playerHealth.takeDamage(damage, this.gameObject);
             damageCooldown.Reset();
             damageCooldown.Unpause();
             MissiveAggregator.instance.Publish(new EnemyAttackEvent(transform.position));
