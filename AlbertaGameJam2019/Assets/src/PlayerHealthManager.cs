@@ -31,13 +31,8 @@ public class PlayerHealthManager : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
-    {
-        SceneManager.LoadScene("StartMenu");
-    }
-
     private void GoToMain()
     {
-        Destroy(gameObject);
+        SceneManager.LoadScene("StartMenu");
     }
 }

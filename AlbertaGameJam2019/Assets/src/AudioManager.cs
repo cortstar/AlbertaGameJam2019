@@ -50,10 +50,17 @@ public class AudioManager : MonoBehaviour,
         Footstep.Play();
     }
     
+    /// <summary>
+    /// i don't know why this was bugged. Love, cort
+    /// </summary>
+    /// <param name="coords"></param>
     void enemyDeathSound(Vector3 coords)
     {
-        EnemyDeath.transform.position = coords;
-        EnemyDeath.Play();
+        if (coords != null)
+        {
+            EnemyDeath.transform.position = coords;
+            EnemyDeath.Play();
+        }
     }
     
     void enemyAttackSound(Vector3 coords)

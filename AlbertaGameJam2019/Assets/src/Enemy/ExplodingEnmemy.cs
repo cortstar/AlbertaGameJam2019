@@ -58,15 +58,18 @@ public class ExplodingEnmemy : EnemyController
 
     private void OnDestroy()
     {
-        playerPos = player.transform.position;
-        selfPos = transform.position;
-        float xDist = Mathf.Abs(playerPos[0] - selfPos[0]);
-        float yDist = Mathf.Abs(playerPos[2] - selfPos[2]);
-        float hypoteneuse = Mathf.Sqrt(xDist * xDist) + (yDist * yDist);
-        if (hypoteneuse < explosionRadius)
+        if (player != null)
         {
-            player.GetComponent<PlayerHealthManager>().takeDamage(20);
+            playerPos = player.transform.position;
+            selfPos = transform.position;
+            float xDist = Mathf.Abs(playerPos[0] - selfPos[0]);
+            float yDist = Mathf.Abs(playerPos[2] - selfPos[2]);
+            float hypoteneuse = Mathf.Sqrt(xDist * xDist) + (yDist * yDist);
+            if (hypoteneuse < explosionRadius)
+            {
+                player.GetComponent<PlayerHealthManager>().takeDamage(20);
+            }
+            MissiveAggregator.instance.Publish(new EnemyExplodedEvent(transform.position));
         }
-        MissiveAggregator.instance.Publish(new EnemyExplodedEvent(transform.position));
     }
 }
