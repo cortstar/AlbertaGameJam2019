@@ -18,7 +18,6 @@ public class PlayerAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(playerAgent.velocity.magnitude);
         animator.SetBool("IsMoving", playerAgent.velocity.magnitude > 0f );
     }
 }
