@@ -7,9 +7,9 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour, IMissiveListener<SwordInputEvent>, IMissiveListener<GunInputEvent>
 {
-
     void Start()
     {
+        
         MissiveAggregator.instance.Register<SwordInputEvent>(this);
         MissiveAggregator.instance.Register<GunInputEvent>(this);
     }
