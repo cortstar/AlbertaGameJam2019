@@ -33,6 +33,6 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void GoToMain()
     {
-        SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene("DeathScene");
     }
 }

@@ -9,6 +9,7 @@
       <e p="Assets" t="Include">
         <e p="DelayText.cs" t="Include" />
         <e p="LockZ.cs" t="Include" />
+        <e p="MoveToStartSceneScript.cs" t="Include" />
         <e p="PlayerAnimator.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Audioscript.cs" t="Include" />
