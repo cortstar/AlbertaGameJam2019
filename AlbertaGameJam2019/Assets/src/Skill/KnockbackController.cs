@@ -32,6 +32,7 @@ public class KnockbackController : MonoBehaviour
     private void TurnKnockBackOff()
     {
         rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
         agent.isStopped = false;
         
     }

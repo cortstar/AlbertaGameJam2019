@@ -19,8 +19,8 @@ public class PlayerHealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //UIManager.instance.maxHealth = totalHealth;
-        //UIManager.instance.currentHealth = currentHealth;
+        UIManager.instance.maxHealth = totalHealth;
+        UIManager.instance.currentHealth = currentHealth;
     }
 
     public void takeDamage(int damage)

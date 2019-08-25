@@ -21,17 +21,14 @@ public class ChargeForwardEnemy : EnemyController
     {
         agent.SetDestination(player.transform.position);
         damageCooldown.Update();
-        Debug.Log(damageCooldown.RemainingTime);
-
     }
 
     private void OnCollisionStay(Collision other)
     {
         var playerHealth = other.gameObject.GetComponent<PlayerHealthManager>();
-        Debug.Log(damageCooldown.IsComplete);
+        
         if (damageCooldown.IsComplete && playerHealth!=null)
         {
-            Debug.Log("called");
             playerHealth.takeDamage(damage);
             damageCooldown.Reset();
             damageCooldown.Unpause();

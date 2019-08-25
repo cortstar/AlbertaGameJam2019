@@ -91,9 +91,8 @@ GameObject:
   - component: {fileID: 6711105768154529757}
   - component: {fileID: 6711105768154529756}
   - component: {fileID: 6711105768154529731}
-  - component: {fileID: 6711105768154529758}
   m_Layer: 5
-  m_Name: WorldUI
+  m_Name: WorldHealthUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,21 +178,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6711105768154529758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6711105768154529729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b71985ca02de134d8a8713bf1731d62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 6711105768710291351}
-  maxHealth: 0
-  currentHealth: 0
 --- !u!1 &6711105768508334190
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +344,7 @@ RectTransform:
   m_GameObject: {fileID: 6711105769015925465}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.42, y: 0.26, z: 1}
   m_Children: []
   m_Father: {fileID: 6711105769114566404}
   m_RootOrder: 0
@@ -407,7 +391,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 2
 --- !u!1 &6711105769114566411
 GameObject:
   m_ObjectHideFlags: 0

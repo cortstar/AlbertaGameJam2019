@@ -24,13 +24,11 @@ public class PistolObjectController : MonoBehaviour
             var kb = col.GetComponent<KnockbackController>();
             if(kb != null)
             {
-                Debug.Log("KBC");
                 kb.Knockback(transform.forward*knockbackForce, 0.2f);
             }
             var health = col.GetComponent<EnemyHealthManager>();
             if (health != null)
             {
-                Debug.Log("HEALTH");
                 health.takeDamage(PistolDamage);
             }
         }
