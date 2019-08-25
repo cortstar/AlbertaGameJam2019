@@ -10261,6 +10261,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8866935e8ac37d4dbcbe8c6731f7ee4, type: 3}
+--- !u!225 &1008391593 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 9158333069390130840, guid: e8866935e8ac37d4dbcbe8c6731f7ee4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1008391592}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1011656690
 GameObject:
   m_ObjectHideFlags: 0
@@ -20177,6 +20183,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4818251865163131322, guid: 7818851edbe2e5541b6bb97d13dc192b,
+        type: 3}
+      propertyPath: redFlash
+      value: 
+      objectReference: {fileID: 1008391593}
     - target: {fileID: 644057916, guid: 7818851edbe2e5541b6bb97d13dc192b, type: 3}
       propertyPath: m_Constraints
       value: 0
@@ -22087,6 +22098,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 386684883, guid: 691babc7d3a8c4e47989aec930bd5dbe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 386684883, guid: 691babc7d3a8c4e47989aec930bd5dbe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 363582881, guid: 691babc7d3a8c4e47989aec930bd5dbe, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -22095,14 +22114,6 @@ PrefabInstance:
     - target: {fileID: 363582881, guid: 691babc7d3a8c4e47989aec930bd5dbe, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 386684883, guid: 691babc7d3a8c4e47989aec930bd5dbe, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 386684883, guid: 691babc7d3a8c4e47989aec930bd5dbe, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 386684884, guid: 691babc7d3a8c4e47989aec930bd5dbe, type: 3}
       propertyPath: m_Sprite

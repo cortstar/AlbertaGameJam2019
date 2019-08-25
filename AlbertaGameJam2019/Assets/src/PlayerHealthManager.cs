@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class PlayerHealthManager : MonoBehaviour
 {
     public int totalHealth;
     public int currentHealth;
+
+    [SerializeField] private CanvasGroup redFlash;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +25,14 @@ public class PlayerHealthManager : MonoBehaviour
         UIManager.instance.currentHealth = currentHealth;
     }
 
+    void LateUpdate()
+    {
+        redFlash.alpha -= 10f * Time.deltaTime;
+    }
+
     public void takeDamage(int damage)
     {
+        redFlash.alpha = 1f;
         currentHealth += -damage;
         if (currentHealth <= 0)
         {
