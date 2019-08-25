@@ -23,6 +23,8 @@
           <e p="DashSkill.cs" t="Include" />
           <e p="EndScript.cs" t="Include" />
           <e p="Enemy" t="Include">
+            <e p="Boss.cs" t="Include" />
+            <e p="Boss2.cs" t="Include" />
             <e p="ChargeForwardEnemy.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
             <e p="ExplodingEnemyAnimationController.cs" t="Include" />
@@ -74,6 +76,7 @@
           </e>
           <e p="SwordSkill.cs" t="Include" />
         </e>
+        <e p="SummonBoss.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

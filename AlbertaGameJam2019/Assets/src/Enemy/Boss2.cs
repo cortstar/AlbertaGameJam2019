@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Boss2 : EnemyController
 {
-    private NavMeshAgent agent;
     public static Boss2 instance;
+    
     private Timer damageCooldown;
 
     [SerializeField]
@@ -16,12 +16,6 @@ public class Boss2 : EnemyController
     void Awake()
     {
         damageCooldown = new Timer(damageCooldownTime);
-    }
-
-    void Start()
-    {
-        agent = gameObject.GetComponentSafely<NavMeshAgent>();
-        gameObject.SetActive(false);
         if (instance == null)
         {
             instance = this;
@@ -34,6 +28,7 @@ public class Boss2 : EnemyController
             }
         }
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -53,5 +48,11 @@ public class Boss2 : EnemyController
             damageCooldown.Unpause();
             MissiveAggregator.instance.Publish(new EnemyAttackEvent(transform.position));
         }
+    }
+
+
+    void OnDestroy()
+    {
+        GameObject.Find("Unlock").SetActive(false);
     }
 }
