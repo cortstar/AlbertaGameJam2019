@@ -5,17 +5,16 @@ using UnityEngine;
 
 public class MovementEvent : Missive
 {
-    public Vector2 axis;
+    public Vector3 position;
 
-    MovementEvent(Vector2 axis_values)
+    public MovementEvent(Vector3 position )
     {
-        axis = axis_values;
+        this.position = position;
     }
+
 
     public override string ToString()
     {
-        return string.Format("Movement: {0},{1}", axis.x, axis.y);
+        throw new System.NotImplementedException();
     }
-    
-
 }

@@ -1,9 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Missive_CSharp;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : MonoBehaviour, 
+    IMissiveListener<SwordUsedEvent>,
+    IMissiveListener<GunUsedEvent>,
+    IMissiveListener<EnemyExplodedEvent>,
+    IMissiveListener<MovementEvent>,
+    IMissiveListener<EnemyAttackEvent>,
+    IMissiveListener<StoppedMovingEvent>,
+    IMissiveListener<EnemyDiedEvent>
 {
+
+    void Start()
+    {
+        MissiveAggregator.instance.Register(this as IMissiveListener<SwordUsedEvent>);
+        MissiveAggregator.instance.Register(this as IMissiveListener<GunUsedEvent>);
+        MissiveAggregator.instance.Register(this as IMissiveListener<MovementEvent>);
+        MissiveAggregator.instance.Register(this as IMissiveListener<EnemyAttackEvent>);
+        MissiveAggregator.instance.Register(this as IMissiveListener<EnemyExplodedEvent>);
+        MissiveAggregator.instance.Register(this as IMissiveListener<StoppedMovingEvent>);
+        MissiveAggregator.instance.Register(this as IMissiveListener<EnemyDiedEvent>);
+    }
 
     public AudioSource Sword;
     public AudioSource Gun;
@@ -11,21 +30,10 @@ public class AudioManager : MonoBehaviour
     public AudioSource EnemyDeath;
     public AudioSource EnemyAttack;
     public AudioSource Explosion;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    
     void swordSound(Vector3 coords)
     {
+        Debug.Log("play");
         Sword.transform.position = coords;
         Sword.Play();
     }
@@ -58,5 +66,43 @@ public class AudioManager : MonoBehaviour
     {
         Explosion.transform.position = coords;
         Explosion.Play();
+    }
+
+    public void HandleMissive(SwordUsedEvent missive)
+    {
+        swordSound(missive.position);
+    }
+
+    public void HandleMissive(GunUsedEvent missive)
+    {
+        gunSound(missive.position);
+    }
+
+    public void HandleMissive(EnemyExplodedEvent missive)
+    {
+        explosionSound(missive.position);
+    }
+
+    public void HandleMissive(MovementEvent missive)
+    {
+        if (!Footstep.isPlaying)
+        {
+            footstepSound(missive.position);
+        }
+    }
+
+    public void HandleMissive(EnemyAttackEvent missive)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void HandleMissive(StoppedMovingEvent missive)
+    {
+        Footstep.Stop();
+    }
+
+    public void HandleMissive(EnemyDiedEvent missive)
+    {
+        EnemyDeath.Play();
     }
 }

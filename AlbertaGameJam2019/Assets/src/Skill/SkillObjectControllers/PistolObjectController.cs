@@ -20,7 +20,6 @@ public class PistolObjectController : MonoBehaviour
             gameObject.transform.GetChild(0).rotation, allMask );
         foreach (var col in (colliders))
         {
-            Debug.Log(col.gameObject.name);
             var kb = col.GetComponent<KnockbackController>();
             if(kb != null)
             {

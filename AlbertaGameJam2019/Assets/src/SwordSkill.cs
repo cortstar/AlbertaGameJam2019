@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Missive_CSharp;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -19,6 +20,8 @@ public class SwordSkill : PlayerSkill
 
     protected override void Behave(GameObject user)
     {
+        Debug.Log("yep");
+        MissiveAggregator.instance.Publish(new SwordUsedEvent(transform.position));
         Instantiate(swordObject, transform.position +  distance * gameObject.transform.forward, transform.rotation, transform);
     }
     

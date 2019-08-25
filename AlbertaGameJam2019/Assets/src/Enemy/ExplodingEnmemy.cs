@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Missive_CSharp;
 using UnityEngine;
 
 public class ExplodingEnmemy : EnemyController
@@ -66,5 +67,6 @@ public class ExplodingEnmemy : EnemyController
         {
             player.GetComponent<PlayerHealthManager>().takeDamage(20);
         }
+        MissiveAggregator.instance.Publish(new EnemyExplodedEvent(transform.position));
     }
 }

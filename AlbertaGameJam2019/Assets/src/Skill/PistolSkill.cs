@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Missive_CSharp;
 using UnityEngine;
 
 public class PistolSkill : PlayerSkill
@@ -16,6 +17,7 @@ public class PistolSkill : PlayerSkill
 
     protected override void Behave(GameObject User)
     {
+        MissiveAggregator.instance.Publish(new GunUsedEvent(transform.position));
         Instantiate(pistolObject, transform.position + gameObject.transform.forward, transform.rotation, transform);
     }
 }

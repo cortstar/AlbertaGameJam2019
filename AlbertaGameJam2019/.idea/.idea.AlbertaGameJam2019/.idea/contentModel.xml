@@ -40,9 +40,17 @@
               <e p="LookEvent.cs" t="Include" />
               <e p="MovementEvent.cs" t="Include" />
               <e p="SkillDashEvent.cs" t="Include" />
+              <e p="SkilllUsedEvents" t="Include">
+                <e p="EnemyAttackEvent.cs" t="Include" />
+                <e p="EnemyDiedEvent.cs" t="Include" />
+                <e p="EnemyExplodedEvent.cs" t="Include" />
+                <e p="GunUsedEvent.cs" t="Include" />
+                <e p="SwordUsedEvent.cs" t="Include" />
+              </e>
               <e p="SkillOneEvent.cs" t="Include" />
               <e p="SkillThreeEvent.cs" t="Include" />
               <e p="SkillTwoEvent.cs" t="Include" />
+              <e p="StoppedMovingEvent.cs" t="Include" />
               <e p="SwordInputEvent.cs" t="Include" />
             </e>
             <e p="IMissiveListener.cs" t="Include" />

@@ -88,7 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swordObject: {fileID: 4935866567824994001, guid: 37555e79c959e2f46a6e1341692c20bb,
     type: 3}
-  distance: 1
+  distance: 1.8
 --- !u!114 &4818251865163131326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +227,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4855170427774764206, guid: cf24180230f73a240b6add291a8b3301,
+  m_Sprite: {fileID: 5145238387665622719, guid: 06b928c70837dd7478f3c4cf8b55bf3f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
